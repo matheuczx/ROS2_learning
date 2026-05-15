@@ -17,9 +17,13 @@ ament_target_dependencies(talker rclcpp tutorial_interfaces)
 add_executable(listener src/subscriber_member_function.cpp)
 ament_target_dependencies(listener rclcpp tutorial_interfaces)  
 
+add_executable(listener_with_topic_statistics src/member_function_with_topic_statistics.cpp)
+ament_target_dependencies(listener_with_topic_statistics rclcpp std_msgs)
+
 install(TARGETS
   talker
   listener
+  listener_with_topic_statistics
   DESTINATION lib/${PROJECT_NAME})
 install(TARGETS
 talker
