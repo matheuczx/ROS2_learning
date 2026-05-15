@@ -1,0 +1,13 @@
+# Ignore build artifacts in any workspace
+**/build/
+**/install/
+**/log/
+
+# Ignore Python/OS junk
+**/*.pyc
+**/__pycache__/
+.DS_Store
+
+# Ignore specific large data files if you have them
+**/*.bag
+**/*.mcap
